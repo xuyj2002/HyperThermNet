@@ -16,7 +16,9 @@ The HyperMeltome dataset is specifically targeted at the high-temperature domain
 
 ## 🧠 HyperThermNet Architecture
 
-<img width="330" height="299" alt="model_0703" src="https://github.com/user-attachments/assets/1aa68922-1b08-4f52-bedb-d16a2c76cc98" />
+<img width="4334" height="1377" alt="model_0703" src="https://github.com/user-attachments/assets/6dc8f804-c181-4de7-bbbd-170e1aa5905e" />
+
+
 
 ## 🛠️ Data Construction & Preprocessing
 
