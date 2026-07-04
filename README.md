@@ -24,27 +24,16 @@ The HyperMeltome dataset is specifically targeted at the high-temperature domain
 
 To ensure high-quality and unbiased data, we implemented a stringent quality-control and debiasing pipeline:
 
-* 
 **Basic Filtering:** Excluded records with missing $T_m$ values, non-standard UniProt identifiers, or anomalous sequences containing non-standard amino acids (e.g., B, J, O, U).
 
-
-* 
 **Length Constraint:** Restricted protein sequence lengths to a maximum of 1,000 residues.
-
-
-* 
+  
 **Quality Assurance:** Retained high-confidence records with a thermal denaturation curve goodness-of-fit $R^2 > 0.9$ and preferentially selected measurements from cells.
 
-
-* 
 **Noise Reduction:** Excluded controversial samples where the $T_m$ range across different experimental batches or microenvironments exceeded $5.0^\circ\text{C}$.
 
-
-* 
 **Homology Reduction:** Applied the CD-HIT algorithm at a 40% sequence identity threshold to cluster and remove redundant sequences.
 
-
-* 
 **Distribution Debiasing:** Applied a uniform undersampling strategy to the densely populated $50^\circ\text{C}$--$60^\circ\text{C}$ interval, retaining 1,500 representative sequences.
 
 
