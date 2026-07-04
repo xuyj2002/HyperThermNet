@@ -4,7 +4,7 @@ This repository contains the **HyperMeltome** dataset, a curated high-temperatur
 
 Please note that this repository **only provides the dataset** for public access and reproducibility. The model source code is kept private.
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 The HyperMeltome dataset is specifically targeted at the high-temperature domain ($50^\circ\text{C} \le T_m \le 100^\circ\text{C}$) to facilitate the prediction and engineering of thermophilic proteins. It was carefully curated from the Meltome Atlas to address common issues such as long-tail distribution, label noise, and information leakage.
 
@@ -14,7 +14,7 @@ The HyperMeltome dataset is specifically targeted at the high-temperature domain
 * **Training Set:** 2,636
 * **Test Set:** 659
 
-## 🧠 HyperThermNet Architecture
+## HyperThermNet Architecture
 
 <img width="4334" height="1377" alt="model_0703" src="https://github.com/user-attachments/assets/6dc8f804-c181-4de7-bbbd-170e1aa5905e" />
 
@@ -38,11 +38,15 @@ To ensure high-quality and unbiased data, we implemented a stringent quality-con
 
 
 
-## 📁 File Structure & Data Format
+## File Structure & Data Format
 
-* `HyperMeltome.csv` : The main dataset file containing the protein sequences and their corresponding thermal properties.
+To facilitate model reproducibility, the data has been pre-split into training and testing sets.
 
-The CSV file contains the following core columns:
+* `HyperMeltome.csv`: The complete, aggregated dataset containing all protein sequences and their corresponding thermal properties.
+* `train.csv`: The training set split (2,636 sequences).
+* `test.csv`: The independent test set split (659 sequences).
+
+Each CSV file contains the following core columns:
 * `uniprot_id`: The unique UniProt identifier for the protein.
 * `tm`: The experimentally measured melting temperature (Tm) in Celsius.
 * `ogt`: The optimal growth temperature (OGT) of the source organism in Celsius.
@@ -50,6 +54,6 @@ The CSV file contains the following core columns:
 * `sequence`: The complete amino acid sequence of the protein.
 
 
-## 📄 License
+## License
 
 This dataset is released under the MIT License - see the LICENSE file for details.
